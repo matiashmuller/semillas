@@ -35,8 +35,6 @@ class Quinoa inherits Planta {
 	
 	override method alternativa() = anioCosecha < 2005
 	override method espacioQueOcupa() = 0.5
-	//Se puede hacer un método auxiliar en "parcelas" respecto de altura de las plantas
-	// para no usar el any acá
 	override method esIdeal(parcela) = !parcela.hayAlgunaQueSupereAltura(1.5)
 }
 
